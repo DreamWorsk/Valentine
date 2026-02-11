@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для тебя ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Главный экран -->
+        <div class="main-screen" id="mainScreen">
+            <div class="header">
+                <h1>С Днём Святого Валентина!</h1>
+                <p class="subtitle">Для самой прекрасной девушки</p>
+            </div>
+            
+            <div class="heart-container">
+                <div class="heart" id="mainHeart">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="instruction">Нажми на сердце</p>
+            </div>
+            
+            <div class="decoration">
+                <div class="flower"></div>
+                <div class="flower"></div>
+                <div class="flower"></div>
+            </div>
+        </div>
+        
+        <!-- Сообщения (скрыты изначально) -->
+        <div class="message-screen" id="messageScreen">
+            <button class="back-btn" id="backBtn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            
+            <div class="message-content">
+                <h2 id="messageTitle">Моё солнышко</h2>
+                <div class="message-text" id="messageText">
+                    <p>Ты делаешь каждый мой день особенным...</p>
+                </div>
+                <div class="photo-frame" id="photoFrame">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-heart"></i>
+                        <p>Наше фото</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="action-btn" id="nextMessage">
+                        <i class="fas fa-forward"></i> Ещё
+                    </button>
+                    <button class="action-btn" id="playMusic">
+                        <i class="fas fa-music"></i> Наша песня
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Аудио -->
+        <audio id="backgroundMusic" loop>
+            <source src="Picca_-_Romans_47829850.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио элемент.
+        </audio>
+        
+        <!-- Конфетти -->
+        <canvas id="confettiCanvas"></canvas>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
